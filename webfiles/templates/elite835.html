@@ -1,0 +1,68 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Elitebook 835 G7</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="shopiphone">
+        <p><i class="fa fa-windows"></i></p>
+        <p>Shop HP Elitebook 835 G7</p>
+    </div>
+    <h1 style=" font-family:'Poppins', sans-serif; text-align:center;margin-top: 40px;margin-bottom: 20px;">Comes in 1 color</h1>
+    <br>
+    <br>
+    <br>
+    <div>
+       <img src="../static/css/images/elitebookad.png" alt="elitesilver" style="width:50%;height:auto;margin-left:auto;margin-right:auto;display:block;">
+       <p style="text-align:center;margin-top:0px;font-family:'Poppins',sans-serif;font-weight:600;font-size:23px;">NATURAL SILVER</p>
+    </div>
+    <br>
+    <br>
+    <h3 style="text-align:center;font-family:'Poppins', sans-serif;font-size:30px;">TECH SPECS</h3>
+    <p style="text-align:center;font-size: 20px;font-family:'Poppins', sans-serif;font-weight:300"><span style="font-family:'Poppins', sans-serif;font-weight:500">Operating System</span> : Windows 10 Pro 64 - HP recommends Windows 10 Pro for business <br> : Windows 10 Home 64 <br> : FreeDOS<br>
+        <span style="font-family:'Poppins', sans-serif;font-weight:500">Screen</span> : 13.3" FHD display<br><span style="font-family:'Poppins', sans-serif;font-weight:500">Memory</span> : 8 GB (1x8 GB) DDR4 3200<br> : 16 GB (1x16 GB) DDR4 3200 <br>
+        <span style="font-family:'Poppins', sans-serif;font-weight:500">Processor</span> : AMD Ryzen™ 3 PRO 4450U processor (2.5 GHz, up to 3.8 GHz with Turbo Boost, 4 MB cache, 4 core) <br> : AMD Ryzen™ 7 PRO 4750U processor (1.7 GHz, up to 4.2 GHz with Turbo Boost, 8 MB cache, 8 core)<br>
+        <span style="font-family:'Poppins', sans-serif;font-weight:500">Graphics</span> : AMD Radeon™ Vega Graphics<br><span style="font-family:'Poppins', sans-serif;font-weight:500">Storage</span> : 256 GB PCIe NVMe SSD<br> : 512 GB PCIe NVMe SSD </p>
+    <form method="POST" class="phonedescript3">
+        <h3>Choose your RAM:</h3>
+        <input type="radio" id="ramlap1" name="835ram" value="8gb">
+        <label for="8gb">8GB</label>
+        <input type="radio" id="ramlap2" name="835ram" value="16gb">
+        <label for="16gb">16GB</label>
+        <br>
+        <h3>Choose your Processor:</h3>
+        <input type="radio" id="proclap1" name="835proc" value="AMDRyzen4450">
+        <label for="AMDRyzen4450">AMD Ryzen™ 3 PRO 4450U</label>
+        <input type="radio" id="proclap2" name="835proc" value="AMDRyzen4750">
+        <label for="AMDRyzen4750">AMD Ryzen™ 7 PRO 4750U</label>
+        <br>
+        <h3>Choose your storage (Includes price of different configurations with your desired storage):</h3>
+        <div class="appleboxes">    
+            <input type="radio" id="choicelap1" name="835storage"value="256gb">
+            <label for="choicelap1"><span>AMD Ryzen™ 3 PRO 4450U<br></span>8<span id="secondtxt">GB<br></span>256<span id="secondtxt">GB<br></span>From $1230 tax inclusive*</label>
+
+            <input type="radio" id="choicelap2" name="835storage"value="256gb">
+            <label for="choicelap2"><span>AMD Ryzen™ 7 PRO 4750U<br></span>8<span id="secondtxt">GB<br></span>256<span id="secondtxt">GB<br></span>From $1330 tax inclusive*</label>
+
+            <input type="radio" id="choicelap3" name="835storage"value="512gb">
+            <label for="choicelap3"><span>AMD Ryzen™ 3 PRO 4450U<br></span>16<span id="secondtxt">GB<br></span>512<span id="secondtxt">GB<br></span>From $1420 tax inclusive*</label>
+
+            <input type="radio" id="choicelap4" name="835storage"value="512gb">
+            <label for="choicelap4"><span>AMD Ryzen™ 7 PRO 4750U<br></span>16<span id="secondtxt">GB<br></span>512<span id="secondtxt">GB<br></span>From $1520 tax inclusive*</label>
+        </div>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

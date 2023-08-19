@@ -1,0 +1,53 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>iPhone</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="options">
+        <p>Choose your preferred model:</p>
+    </div>
+    <div class="frame2">
+        <h2>Iphone 12 Pro Max</h2>
+        <a href="{{ url_for('iphone12ProMax_page') }}"><img src="../static/css/images/iphone-12-pro-blue-hero.png" alt="iphone12proMax" style="width:330.3px;padding-left:85px;margin-top:-60px"></a>
+        <p style="text-align: center;margin-top:0;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $1099 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>Iphone 12 Pro</h2>
+        <a href="{{ url_for('iphone12Pro_page') }}"><img src="../static/css/images/iphone-12-pro-graphite-hero.png" alt="iphone12pro" style="width:330.3px;padding-left:85px;margin-top:-60px"></a>
+        <p style="text-align: center;margin-top:0;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $999 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>Iphone 12</h2>
+        <a href="{{ url_for('iphone12_page') }}"><img src="../static/css/images/iphone-12-black-select-2020.png" alt="iphone12" style="width:330.3px;padding-left:85px;margin-top:-60px"></a>
+        <p style="text-align: center;margin-top:0;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $799 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>Iphone 11</h2>
+        <a href="{{ url_for('iphone11_page') }}"><img src="../static/css/images/iphone11-black-select-2019.png" alt="iphone11" style="width:290.3px;padding-left:100px;margin-top:-40px"></a>
+        <p style="text-align: center;margin-top:25px;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $599 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>Iphone XR</h2>
+        <a href="{{ url_for('iphoneXR_page') }}"><img src="../static/css/images/iphone-xr-black-select-201809.png" alt="iphoneXR" style="width:290.3px;padding-left:100px;margin-top:-30px"></a>
+        <p style="text-align: center;margin-top:25px;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $499 tax inclusive*</p>
+    </div>
+    <br>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

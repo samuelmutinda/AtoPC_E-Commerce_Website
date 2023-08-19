@@ -1,0 +1,37 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Samsung Note</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="options">
+        <p>Choose your preferred model:</p>
+    </div>
+    <div class="frame2">
+        <h2>Galaxy Note 20</h2>
+        <a href="{{ url_for('samsungnote20_page') }}"><img src="../static/css/images/note20black.png" alt="greysamsung" style="width:400.3px;padding-left:50px;margin-top:-25px;"></a>
+        <p style="text-align:center;margin-top:-10px;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $549 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>Samsung note 20 ultra</h2>
+        <a href="{{ url_for('samsungnote20ultra_page') }}"><img src="../static/css/images/note20-ultra-black.png" alt="blacksamsung" style="width:400.3px;padding-left:50px;margin-top:-25px;"></a>
+        <p style="text-align:center;margin-top:-10px;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $849 tax inclusive*</p>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

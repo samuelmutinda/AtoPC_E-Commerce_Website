@@ -1,0 +1,37 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Surface Laptop 4</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="options">
+        <p>Available inches:</p>
+    </div>
+    <div class="frame2">
+        <h2 style="font-size:37px">13.5 inch</h2>
+        <a href="{{ url_for('SurfaceLaptop413inch_page') }}"><img src="../static/css/images/surfacelaptop4platinum.png" alt="surfacelaptop4" style="width:495.3px;margin-top:0px"></a>
+        <p style="text-align: center;margin-top:0px;font-size: 25px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $999 tax inclusive*</p>
+    </div>
+    <br>
+    <br>
+    <div class="frame2">
+        <h2 style="font-size:37px">15 inch</h2>
+        <a href="{{ url_for('SurfaceLaptop415inch_page') }}"><img src="../static/css/images/surfacelaptop4platinum2.png" alt="surfacelaptop4" style="width:495.3px;margin-top:0px"></a>
+        <p style="text-align: center;margin-top:0px;font-size: 25px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $1299 tax inclusive*</p>
+    </div>
+    <br>
+    <br>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

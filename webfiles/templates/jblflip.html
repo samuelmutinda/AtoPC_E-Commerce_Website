@@ -1,0 +1,61 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>JBL Flip 5</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="shopiphone">
+        <p>Shop JBL Flip 5</p>
+    </div>
+    <h1 style=" font-family:'Poppins', sans-serif; text-align:center;margin-top: 40px;margin-bottom: 20px;">Comes in 3 colors</h1>
+   <br>
+   <br>
+   <br>
+   <div style="box-sizing: border-box;">
+        <div class="row5">
+            <div class="column5">
+                <img src="../static/css/images/jblflipblack1.png" alt="flipblack" style="max-width:100%;height:auto;">
+                <p style="margin-top:-70px;font-family:'Poppins',sans-serif;font-weight:600;font-size:23px;">BLACK</p>
+            </div>
+            <div class="column5">
+                <img src="../static/css/images/jblflipgrey1.png" alt="flipgrey" style="max-width:100%;height:auto;">
+                <p style="margin-top:-70px;font-family:'Poppins',sans-serif;font-weight:600;font-size:23px;">GREY</p>
+            </div>
+            <div class="column5">
+                <img src="../static/css/images/jblflipblue1.png" alt="flipblue" style="max-width:100%;height:auto;">
+                <p style="margin-top:-70px;font-family:'Poppins',sans-serif;font-weight:600;font-size:23px;">BLUE</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h3 style="text-align:center;font-family:'Poppins', sans-serif;font-size:45px;">PORTABLE WATERPROOF SPEAKER</h3>
+    <p style="text-align:center;font-size:20px;font-family:'Poppins', sans-serif;font-weight:300">Up to 12 hours of play time<br>
+        Charging time : 2.5 hours<br>Stand it vertical or horizontal<br>Durable fabric material and rugged rubber housing keeps the Flip5<br>safe as you let loose outdoors<br>
+        Pair two JBL PartyBoost-compatible speakers together for stereo sound or <br>link multiple JBL PartyBoost-compatible speakers to create a bigger party</p>
+    <br>
+    <form method="POST" class="phonedescript2">
+        <h3>Choose your finish:</h3>
+        <input type="radio" id="colorspeak1" name="flipcolor" value="Black">
+        <label for="Black">Black</label>
+        <input type="radio" id="colorspeak2" name="flipcolor" value="Grey">
+        <label for="Grey">Grey</label>
+        <input type="radio" id="colorspeak3" name="flipcolor" value="Blue">
+        <label for="Blue">Blue</label>
+        <h3>From $119 tax inclusive*</h3>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

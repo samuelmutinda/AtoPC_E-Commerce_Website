@@ -1,0 +1,53 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>BeatsbyDre</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="options">
+        <p>Choose your preferred model:</p>
+    </div>
+    <div class="frame2">
+        <h2>Powerbeats</h2>
+        <a href="{{ url_for('PowerBeats_page') }}"><img src="../static/css/images/powerbeatsearred.png" alt="powerbeatsred" style="width:270.3px;padding-left:110px;margin-top:-20px"></a>
+        <p style="text-align: center;margin-top:0;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">From $149 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>Powerbeats Pro</h2>
+        <a href="{{ url_for('PowerBeatsPro_page') }}"><img src="../static/css/images/powerbeatsred.png" alt="powerbeatsprored" style="width:280.3px;padding-left:110px;margin-top:-20px"></a>
+        <p style="text-align: center;margin-top:0;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">From $249 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>Solo Pro</h2>
+        <a href="{{ url_for('SoloPro_page') }}"><img src="../static/css/images/soloproblack.png" alt="soloproblack" style="width:280.3px;padding-left:110px;margin-top:-20px"></a>
+        <p style="text-align: center;margin-top:0;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">From $299 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>Beats Studio<sup>3</sup>Wireless</h2>
+        <a href="{{ url_for('BeatsStudio_page') }}"><img src="../static/css/images/beatsstudioblack.png" alt="beatsstudioblack" style="width:240.3px;padding-left:130px;margin-top:0px"></a>
+        <p style="text-align: center;margin-top:25px;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">From $349 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>Beats Pill+</h2>
+        <a href="{{ url_for('BeatsPill_page') }}"><img src="../static/css/images/beatspillred.png" alt="beatspillred" style="width:300.3px;padding-left:90px;margin-top:-30px"></a>
+        <p style="text-align: center;margin-top:-20px;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">From $179 tax inclusive*</p>
+    </div>
+    <br>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

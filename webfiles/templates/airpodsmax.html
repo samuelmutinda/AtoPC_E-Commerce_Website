@@ -1,0 +1,74 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>AirPods Max</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="shopiphone">
+        <p><i class="fa fa-apple"></i></p>
+        <p>Shop AirPods Max</p>
+    </div>
+    <h1 style=" font-family:'Poppins', sans-serif; text-align:center;margin-top: 40px;margin-bottom: 20px;">Comes in 4 colors</h1>
+   <br>
+   <br>
+   <br>
+   <div style="box-sizing: border-box;">
+        <div class="row6">
+            <div class="column6">
+                <img src="../static/css/images/airpodsmaxsilver.png" alt="airmaxsilver" style="max-width:100%;height:auto;">
+                <p style="margin-top:0px;font-family:'Poppins',sans-serif;font-weight:600;font-size:23px;">SILVER</p>
+            </div>
+            <div class="column6">
+                <img src="../static/css/images/airpodsmaxwhite.png" alt="airmaxspacegray" style="max-width:100%;height:auto;">
+                <p style="margin-top:0px;font-family:'Poppins',sans-serif;font-weight:600;font-size:23px;">SPACE GRAY</p>
+            </div>
+        </div>
+        <div class="row6">
+            <div class="column6">
+                <img src="../static/css/images/airpodsmaxpink.png" alt="airmaxpink" style="max-width:100%;height:auto;">
+                <p style="margin-top:0px;font-family:'Poppins',sans-serif;font-weight:600;font-size:23px;">PINK</p>
+            </div>
+            <div class="column6">
+                <img src="../static/css/images/airpodsmaxblue.png" alt="airmaxblue" style="max-width:100%;height:auto;">
+                <p style="margin-top:0px;font-family:'Poppins',sans-serif;font-weight:600;font-size:23px;">SKY BLUE</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>    
+    <h3 style="text-align:center;font-family:'Poppins', sans-serif;font-size:30px;">TECH SPECS</h3>
+    <p style="text-align:center;font-size:20px;font-family:'Poppins', sans-serif;font-weight:300"><span style="font-family:'Poppins', sans-serif;font-weight:500">Sensors</span> : Optical sensor (each ear cup)<br> : Position sensor (each ear cup)<br>
+        : Case-detect sensor (each ear cup)<br> : Accelerometer (each ear cup)<br> : Gyroscope (left ear cup)<br><span style="font-family:'Poppins', sans-serif;font-weight:500">Audio Technology</span> : Apple-designed dynamic driver<br> : Active Noise Cancellation<br>
+        : Transparency mode<br> : Adaptive EQ<br> : Spatial audio with dynamic head tracking<sup>1</sup><br><span style="font-family:'Poppins', sans-serif;font-weight:500">Microphones-9 in total</span> : Eight microphones for Active Noise Cancellation<br>
+        : Three microphones for voice pickup(two shared with Active Noise Cancellation and one additional microphone)<br><span style="font-family:'Poppins', sans-serif;font-weight:500">Chip</span> : Apple H1 headphone chip (each ear cup)<br>
+        <span style="font-family:'Poppins', sans-serif;font-weight:500">Battery-AirPods Max with Smart Case</span> : Storage in the Smart Case preserves battery charge in ultra-low-power state<br> : Charging via Lightning connector<br> 
+        <span style="font-family:'Poppins', sans-serif;font-weight:500">Connectivity</span> : Bluetooth 5.0<br><span style="font-family:'Poppins', sans-serif;font-weight:500">System Requirements<sup>11</sup></span> : iPhone and iPod touch models with the latest version of iOS
+        <br> : iPad models with the latest version of iPadOS<br>: Apple Watch models with the latest version of watchOS<br> : Mac models with the latest version of macOS<br> : Apple TV models with the latest version of tvOS</p>
+    <form method="POST" class="phonedescript2">
+        <h3>Choose your finish:</h3>
+        <input type="radio" id="colorspeak1" name="airmaxcolor" value="Silver">
+        <label for="Silver">Silver</label>
+        <input type="radio" id="colorspeak2" name="airmaxcolor" value="Spacegray">
+        <label for="Spacegray">Space Gray</label>
+        <input type="radio" id="colorspeak3" name="airmaxcolor" value="Pink">
+        <label for="Pink">Pink</label>
+        <input type="radio" id="colorspeak4" name="airmaxcolor" value="Skyblue">
+        <label for="Skyblue">Sky Blue</label>
+        <br>
+        <h3>From $549 tax inclusive*</h3>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

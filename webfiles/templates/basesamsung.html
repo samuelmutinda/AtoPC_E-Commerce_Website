@@ -1,0 +1,40 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Samsung</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="options">
+        <p>Choose your preferred series:</p>
+    </div>
+    <div class="frame2">
+        <h2>Galaxy S series</h2>
+        <a href="{{ url_for('SamsungS21_page') }}"><img src="../static/css/images/s21phantomviolet.png" alt="S21violet" style="width:280.3px;padding-left:105px;"></a>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>Galaxy Z series</h2>
+        <a href="{{ url_for('SamsungFold_page') }}"><img src="../static/css/images/galaxyfoldad3.png" alt="galaxyfold" style="width:400.3px;padding-left:45px;"></a>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>Galaxy Note series</h2>
+        <a href="{{ url_for('SamsungNote_page') }}"><img src="../static/css/images/samsung-galaxy-note20-ad.png" alt="galaxynote" style="width:400.3px;padding-left:70px;"></a>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

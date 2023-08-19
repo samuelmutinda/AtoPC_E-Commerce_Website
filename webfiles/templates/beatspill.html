@@ -1,0 +1,59 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>BeatsPill+</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="shopiphone">
+        <img src="../static/css/images/beatsbydrelogo2.png" alt="beatslogo" style="width:65px;"> 
+        <p>Shop Beats Pill+</p>
+    </div>
+    <h1 style=" font-family:'Poppins', sans-serif; text-align:center;margin-top: 40px;margin-bottom: 20px;">Comes in 3 colors</h1>
+   <br>
+   <div style="box-sizing: border-box;">
+        <div class="row5">
+            <div class="column5">
+                <img src="../static/css/images/beatspillblack.png" alt="pillblack" style="max-width:100%;height:auto;">
+                <p style="margin-top:-150px;font-family:'Poppins',sans-serif;font-weight:600;font-size:25px;">BLACK</p>
+            </div>
+            <div class="column5">
+                <img src="../static/css/images/beatspillred.png" alt="pillred" style="max-width:100%;height:auto;">
+                <p style="margin-top:-150px;font-family:'Poppins',sans-serif;font-weight:600;font-size:25px;">RED</p>
+            </div>
+            <div class="column5">
+                <img src="../static/css/images/beatspillwhite.png" alt="pillwhite" style="max-width:100%;height:auto;">
+                <p style="margin-top:-150px;font-family:'Poppins',sans-serif;font-weight:600;font-size:25px;">WHITE</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h3 style="text-align:center;font-family:'Poppins', sans-serif;font-size:45px;">PORTABLE WIRELESS SPEAKER</h3>
+    <p style="text-align:center;font-size:20px;font-family:'Poppins', sans-serif;font-weight:300">Up to 12 hours of playtime<br>
+        Defined,pure sound quality<br>Charge-out USB port for powering devices</p>
+    <br>
+    <form method="POST" class="phonedescript2">
+        <h3>Choose your finish:</h3>
+        <input type="radio" id="colorspeak1" name="pillcolor" value="Black">
+        <label for="Black">Black</label>
+        <input type="radio" id="colorspeak2" name="pillcolor" value="Red">
+        <label for="Red">Red</label>
+        <input type="radio" id="colorspeak3" name="pillcolor" value="White">
+        <label for="White">White</label>
+        <h3>From $179 tax inclusive*</h3>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

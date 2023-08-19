@@ -1,0 +1,45 @@
+{%extends 'adminbase.html'%}
+
+{% block head %}
+
+<title>Restock beatss</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<section>
+    <div class="Registercont" id="buyform">
+        <div class="Registerbox">
+            <form method="POST" class="configcolor">
+                {{ form.hidden_tag() }}
+                    <div class="x">
+                        <span style="font-family:'Poppins', sans-serif;font-size: 20px;">Select a Beats model</span><br><br>
+                        {{ form.model(class="form-control") }}
+                    </div><br><br>
+                    <div class="inputbox">
+                        <span>Enter the color</span>
+                        {{ form.color(class="form-control") }}
+                    </div><br>
+                    <div class="inputbox">
+                        <span>Enter the price</span>
+                        {{ form.price(class="form-control") }}
+                    </div><br>
+                    <div class="inputbox">
+                        <span>Enter the number of units</span>
+                        {{ form.units(class="form-control") }}
+                    </div>
+                    <div class="inputbox">{{ form.submit(class="btn btn-lg btn-block btn-primary") }}</div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

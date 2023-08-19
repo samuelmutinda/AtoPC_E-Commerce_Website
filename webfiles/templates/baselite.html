@@ -1,0 +1,47 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Elitebook</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="options">
+        <p>Choose your preferred model:</p>
+    </div>
+    <div class="frame5">
+        <h2 style="font-size:37px">Elitebook 845 G7</h2>
+        <a href="{{ url_for('Elitebook845_page') }}"><img src="../static/css/images/elite845ad.png" alt="elite845" style="width:530.3px;padding-left:85px;margin-top:10px;"></a>
+        <p style="text-align: center;margin-top:40px;font-size: 30px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $1120 tax inclusive*</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="frame5">
+        <h2 style="font-size:37px">Elitebook 835 G7</h2>
+        <a href="{{ url_for('Elitebook835_page') }}"><img src="../static/css/images/elite845ad.png" alt="elite835" style="width:530.3px;padding-left:85px;margin-top:10px"></a>
+        <p style="text-align: center;margin-top:40px;font-size: 30px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $1230 tax inclusive*</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="frame5">
+        <h2 style="font-size:37px">Elite Dragonfly G2</h2>
+        <a href="{{ url_for('EliteDragonfly_page') }}"><img src="../static/css/images/elitedragonflyad.png" alt="elitefly" style="width:530.3px;padding-left:85px;margin-top:50px"></a>
+        <p style="text-align: center;margin-top:60px;font-size: 30px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $1680 tax inclusive*</p>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

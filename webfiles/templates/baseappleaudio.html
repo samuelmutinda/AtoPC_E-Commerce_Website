@@ -1,0 +1,42 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Apple Audio</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="options">
+        <p>Choose your preferred model:</p>
+    </div>
+    <div class="frame2">
+        <h2>AirPods</h2>
+        <a href="{{ url_for('Airpods_page') }}"><img src="../static/css/images/airpods.png" alt="airpods" style="width:240.3px;padding-left:130px;margin-top:10px"></a>
+        <p style="text-align: center;margin-top:20px;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">From 159 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>AirPods Pro</h2>
+        <a href="{{ url_for('AirpodsPro_page') }}"><img src="../static/css/images/airpodspro.png" alt="airpodspro" style="width:350.3px;padding-left:73px;margin-top:0px"></a>
+        <p style="text-align: center;margin-top:0;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">From $249 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>AirPods Max</h2>
+        <a href="{{ url_for('AirpodsMax_page') }}"><img src="../static/css/images/airpodsmaxad.png" alt="airpodsmax" style="width:330.3px;padding-left:80px;margin-top:-40px"></a>
+        <p style="text-align: center;margin-top:0;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">From $549 tax inclusive*</p>
+    </div>
+    <br>
+    <br>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

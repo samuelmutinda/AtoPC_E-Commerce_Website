@@ -1,0 +1,60 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Beats Solo Pro</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="shopiphone">
+        <img src="../static/css/images/beatsbydrelogo2.png" alt="beatslogo" style="width:65px;"> 
+        <p>Shop Solo Pro</p>
+    </div>
+    <h1 style=" font-family:'Poppins', sans-serif; text-align:center;margin-top: 40px;margin-bottom: 20px;">Comes in 3 colors</h1>
+   <br>
+   <br>
+   <br>
+   <div style="box-sizing: border-box;">
+        <div class="row5">
+            <div class="column5">
+                <img src="../static/css/images/soloproblack.png" alt="soloblack" style="max-width:100%;height:auto;">
+                <p style="margin-top:0px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;">BLACK</p>
+            </div>
+            <div class="column5">
+                <img src="../static/css/images/soloprogrey.png" alt="sologray" style="max-width:100%;height:auto;">
+                <p style="margin-top:0px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;">GRAY</p>
+            </div>
+            <div class="column5">
+                <img src="../static/css/images/soloproivory.png" alt="soloivory" style="max-width:100%;height:auto;">
+                <p style="margin-top:0px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;">IVORY</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h3 style="text-align:center;font-family:'Poppins', sans-serif;font-size:45px;">NOISE CANCELLING WIRELESS HEADPHONES</h3>
+    <p style="text-align:center;font-size:20px;font-family:'Poppins', sans-serif;font-weight:300">With Active Noise Cancelling(ANC)<br>
+        Transparency mode<br>Up to 22 hours listening time<br>Intergrated on-ear controls</p>
+    <form method="POST" class="phonedescript2">
+        <h3>Choose your finish:</h3>
+        <input type="radio" id="colorspeak1" name="solocolor" value="Black">
+        <label for="Black">Black</label>
+        <input type="radio" id="colorspeak2" name="solocolor" value="Gray">
+        <label for="Gray">Gray</label>
+        <input type="radio" id="colorspeak3" name="solocolor" value="Ivory">
+        <label for="Ivory">Ivory</label>
+        <h3>From $299 tax inclusive*</h3>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

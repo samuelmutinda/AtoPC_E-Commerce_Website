@@ -1,0 +1,53 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>HP</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="options">
+        <p>Choose your preferred model:</p>
+    </div>
+    <div class="frame5">
+        <h2 style="font-size:37px">ELITE</h2>
+        <a href="{{ url_for('ELITE_page') }}"><img src="../static/css/images/elitebookad.png" alt="elite" style="width:570.3px;padding-left:75px;margin-top:50px;"></a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="frame5">
+        <h2 style="font-size:37px">ENVY</h2>
+        <a href="{{ url_for('ENVY_page') }}"><img src="../static/css/images/hpenvy.png" alt="envy" style="width:550.3px;padding-left:85px;margin-top:0px"></a>
+        <p style="text-align: center;margin-top:0px;font-size: 30px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $749 tax inclusive*</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="frame5">
+        <h2 style="font-size:37px">PAVILION</h2>
+        <a href="{{ url_for('PAVILION_page') }}"><img src="../static/css/images/pavilionad.png" alt="pavilion" style="width:550.3px;padding-left:85px;margin-top:0px"></a>
+        <p style="text-align: center;margin-top:10px;font-size: 30px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $659 tax inclusive*</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="frame5">
+        <h2 style="font-size:37px">OMEN</h2>
+        <a href="{{ url_for('OMEN_page') }}"><img src="../static/css/images/omen15.png" alt="omen" style="width:550.3px;padding-left:85px;margin-top:50px"></a>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

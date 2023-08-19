@@ -1,0 +1,61 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>OnePlus</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+     <div class="options">
+        <p>Choose your preferred model:</p>
+    </div>
+    <div class="frame2">
+        <h2>OnePlus 9 Pro 5G</h2>
+        <a href="{{ url_for('oneplus9Pro_page') }}"><img src="../static/css/images/oneplus9pro-silver.png" alt="oneplussilver" style="width:400.3px;padding-left:50px;margin-top:-25px;"></a>
+        <p style="text-align:center;margin-top:-20px;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $969 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>OnePlus 9 5G</h2>
+        <a href="{{ url_for('oneplus9_page') }}"><img src="../static/css/images/oneplus9-black.png" alt="oneplusblack" style="width:400.3px;padding-left:50px;margin-top:-25px;"></a>
+        <p style="text-align:center;margin-top:-20px;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $729 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>OnePlus 8 Pro</h2>
+        <a href="{{ url_for('oneplus8Pro_page') }}"><img src="../static/css/images/oneplus8Pro-blue.png" alt="oneplusblue" style="width:400.3px;padding-left:50px;margin-top:-25px;"></a>
+        <p style="text-align:center;margin-top:-20px;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $899 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>OnePlus 8T</h2>
+        <a href="{{ url_for('oneplus8T_page') }}"><img src="../static/css/images/oneplus8T-silver.png" alt="oneplussilver" style="width:400.3px;padding-left:50px;margin-top:-25px;"></a>
+        <p style="text-align:center;margin-top:-20px;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $649 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>OnePlus 8</h2>
+        <a href="{{ url_for('oneplus8_page') }}"><img src="../static/css/images/oneplus8-pink.png" alt="onepluspink" style="width:400.3px;padding-left:50px;margin-top:-25px;"></a>
+        <p style="text-align:center;margin-top:-20px;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $699 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>OnePlus 7T</h2>
+        <a href="{{ url_for('oneplus7T_page') }}"><img src="../static/css/images/oneplus7T-blue.png" alt="oneplusblue" style="width:400.3px;padding-left:50px;margin-top:-25px;"></a>
+        <p style="text-align:center;margin-top:-20px;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $599 tax inclusive*</p>
+    </div>
+
+    <br>
+
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

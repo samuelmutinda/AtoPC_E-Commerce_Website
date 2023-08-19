@@ -1,0 +1,50 @@
+{%extends 'adminbase.html'%}
+
+{% block head %}
+
+<title>Manage laptops</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<div class="restock" style="text-align: center;font-family:'Poppins', sans-serif;" >
+    <h3>Select manufacturer to restock devices</h3>
+    <a href="{{ url_for('addmacbook') }}" style="text-decoration:none; color:black;">1. Apple</a><br><br>
+    <a href="{{ url_for('addsurface') }}" style="text-decoration:none; color:black;">2. Microsoft</a><br><br>
+    <a href="{{ url_for('addhp') }}" style="text-decoration:none; color:black;">3. HP</a>
+</div>
+<br><br><br>
+<table class="table table-sm" style="justify-content: center;font-family:'Poppins', sans-serif;">
+    <h3 style="text-align: center;font-family:'Poppins', sans-serif;text-decoration:underline;">Laptops Stock:</h3>
+    <thead>
+      <tr class="spaceUnder"></tr>
+        <th scope="col">Name</th>
+        <th scope="col">Color</th>
+        <th scope="col">RAM</th>
+        <th scope="col">Processor</th>
+        <th scope="col">Storage</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    {% for i in range(laptops| length) %}
+    <tbody>
+      <tr class="spaceUnder">
+        <td>{{  laptops[i].lapname }}</td>
+        <td>{{  laptops[i].lapcolor }}</td>
+        <td>{{  laptops[i].lapram }}</td>
+        <td>{{  laptops[i].lapprocessor }}</td>
+        <td>{{  laptops[i].lapstorage }}</td>
+        <td>{{  laptops[i].lapamount|int }}</td>
+      </tr>
+    </tbody>
+    {% endfor %}
+</table>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

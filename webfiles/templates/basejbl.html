@@ -1,0 +1,59 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>JBL</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="options">
+        <p>Choose your preferred model:</p>
+    </div>
+    <div class="frame2">
+        <h2>JBL TUNE 205BT</h2>
+        <a href="{{ url_for('JBLTune205BT_page') }}"><img src="../static/css/images/jbltune205black.png" alt="jbltuneblack" style="width:330.3px;padding-left:85px;margin-top:0px"></a>
+        <p style="text-align: center;margin-top:0;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">From $39 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>JBL TUNE 125TWS</h2>
+        <a href="{{ url_for('JBLTune125TWS_page') }}"><img src="../static/css/images/jbltune250black.png" alt="jbltunebudblack" style="width:330.3px;padding-left:85px;margin-top:0px"></a>
+        <p style="text-align: center;margin-top:0;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">From $99 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>JBL LIVE 500BT</h2>
+        <a href="{{ url_for('JBLLive500BT_page') }}"><img src="../static/css/images/jblive500ad.png" alt="jbl500blue" style="width:330.3px;padding-left:85px;margin-top:0px"></a>
+        <p style="text-align: center;margin-top:0;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">From $149 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>JBL LIVE 460NC</h2>
+        <a href="{{ url_for('JBL460_page') }}"><img src="../static/css/images/jbl460ad.png" alt="jbl460black" style="width:330.3px;padding-left:85px;margin-top:-20px"></a>
+        <p style="text-align: center;margin-top:25px;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">From $129 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>JBL QUANTUM 300</h2>
+        <a href="{{ url_for('JBLQuantum_page') }}"><img src="../static/css/images/jblquantum300ad.png" alt="jblqblack" style="width:330.3px;padding-left:85px;margin-top:-10px"></a>
+        <p style="text-align: center;margin-top:25px;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">From $80 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>JBL FLIP 5</h2>
+        <a href="{{ url_for('JBLFlip5_page') }}"><img src="../static/css/images/jblflipblack1.png" alt="jblflipblack" style="width:330.3px;padding-left:85px;margin-top:0px"></a>
+        <p style="text-align: center;margin-top:0px;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">From $119 tax inclusive*</p>
+    </div>
+    <br>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

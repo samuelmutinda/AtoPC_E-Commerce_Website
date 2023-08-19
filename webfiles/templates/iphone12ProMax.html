@@ -1,0 +1,74 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>iPhone 12 Pro Max</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="shopiphone">
+        <p><i class="fa fa-apple"></i></p>
+        <p>Shop iPhone 12 Pro Max</p>
+    </div>
+    <h1 style=" font-family:'Poppins', sans-serif; text-align:center;margin-top: 40px;margin-bottom: 20px;">Comes in 4 colors</h1>
+    <div class="slider">
+        <input type="radio" name="slider" title="Blue" checked="checked" class="slider__nav"/>
+        <input type="radio" name="slider" title="Gold" class="slider__nav"/>
+        <input type="radio" name="slider" title="Graphite" class="slider__nav"/>
+        <input type="radio" name="slider" title="Silver" class="slider__nav"/>
+        <div class="slider__inner">
+          <div class="slider__contents">
+            <h3>BLUE</h3>
+            <img class="slider__img" src="../static/css/images/iphone-12-pro-blue-hero.png" alt="blueiphone">
+          </div>
+          <div class="slider__contents">
+            <h3>GOLD</h3>
+            <img class="slider__img" src="../static/css/images/iphone-12-pro-gold-hero.png" alt="goldiphone">
+          </div>
+          <div class="slider__contents">
+            <h3>GRAPHITE</h3>
+            <img class="slider__img" src="../static/css/images/iphone-12-pro-graphite-hero.png" alt="graphiteiphone">
+          </div>
+          <div class="slider__contents">
+            <h3>SILVER</h3>
+            <img class="slider__img" src="../static/css/images/iphone-12-pro-silver-hero.png" alt="silveriphone">
+          </div>
+        </div>
+      </div>
+      <p style="text-align:center;font-size: 20px;font-family:'Poppins', sans-serif;font-weight: 300"> 6.7-inch display</p>
+      <form method="POST" class="phonedescript">
+          <h3>Choose your finish:</h3>
+          <input type="radio" id="colorbutton1" name="12promaxcolor" value="Blue">
+          <label for="Blue">Blue</label>
+          <input type="radio" id="colorbutton2" name="12promaxcolor" value="Gold">
+          <label for="Gold">Gold</label>
+          <input type="radio" id="colorbutton3" name="12promaxcolor" value="Graphite">
+          <label for="Graphite">Graphite</label>
+          <input type="radio" id="colorbutton4" name="12promaxcolor" value="Silver">
+          <label for="Silver">Silver</label>
+          <br>
+          <h3>Choose your capacity:</h3>
+          <div class="appleboxes">
+            <input type="radio" id="choicebutton1" name="12promaxstorage" value="128gb">
+            <label for="choicebutton1">128<span id="secondtxt">GB<sup>2</sup><br></span><span id="thirdtxt">From $1099 tax inclusive*</span></label>
+
+            <input type="radio" id="choicebutton2" name="12promaxstorage"value="256gb">
+            <label for="choicebutton2">256<span id="secondtxt">GB<sup>2</sup><br></span><span id="thirdtxt">From $1199 tax inclusive*</span></label>
+
+            <input type="radio" id="choicebutton3" name="12promaxstorage"value="512gb">
+            <label for="choicebutton3">512<span id="secondtxt">GB<sup>2</sup><br></span><span id="thirdtxt">From $1399 tax inclusive*</span></label>
+          </div>
+          <input type="submit" value="SUBMIT">
+      </form>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

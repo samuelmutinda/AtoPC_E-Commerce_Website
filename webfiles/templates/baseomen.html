@@ -1,0 +1,39 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>OMEN</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="options">
+        <p>Choose your preferred model:</p>
+    </div>
+    <div class="frame5">
+        <h2 style="font-size:37px">OMEN 15</h2>
+        <a href="{{ url_for('OMEN15_page') }}"><img src="../static/css/images/omen15ad.png" alt="omen15" style="width:530.3px;padding-left:85px;margin-top:20px;"></a>
+        <p style="text-align: center;margin-top:20px;font-size: 30px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $999 tax inclusive*</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="frame5">
+        <h2 style="font-size:37px">OMEN X 2S RTX</h2>
+        <a href="{{ url_for('OMENX2S_page') }}"><img src="../static/css/images/omenx25.png" alt="omen17" style="width:530.3px;padding-left:85px;margin-top:20px"></a>
+        <p style="text-align: center;margin-top:20px;font-size: 30px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $2499 tax inclusive*</p>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

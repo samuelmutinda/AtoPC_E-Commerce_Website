@@ -1,0 +1,47 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Bose</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="options">
+        <p>Choose your preferred model:</p>
+    </div>
+    <div class="frame2">
+        <h2>SoundSport wireless</h2>
+        <a href="{{ url_for('SoundSport_page') }}"><img src="../static/css/images/boseearphonesblue.png" alt="bosearblue" style="width:400.3px;padding-left:40px;margin-top:-10px"></a>
+        <p style="text-align: center;margin-top:0;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">From $99 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>Bose QuietComfort® Earbuds</h2>
+        <a href="{{ url_for('BoseBuds_page') }}"><img src="../static/css/images/bosearbudad.png" alt="bosearblack" style="width:380.3px;padding-left:60px;margin-top:10px"></a>
+        <p style="text-align: center;margin-top:0;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">From $279 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>QuietComfort 35 wireless II</h2>
+        <a href="{{ url_for('BoseHeadphones_page') }}"><img src="../static/css/images/bosewirelessilverad.png" alt="bosearsilver" style="width:390.3px;padding-left:60px;margin-top:0px"></a>
+        <p style="text-align: center;margin-top:0;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">From $299 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>Bose QuietComfort® 35 II Gaming</h2>
+        <a href="{{ url_for('BoseGamingHeadphones_page') }}"><img src="../static/css/images/bosegamingad.png" alt="boseblack" style="width:350.3px;padding-left:70px;margin-top:20px"></a>
+        <p style="text-align: center;margin-top:25px;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">From $329 tax inclusive*</p>
+    </div>
+    <br>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

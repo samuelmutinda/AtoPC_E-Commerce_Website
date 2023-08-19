@@ -1,0 +1,39 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Checkout</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <h1 style="text-align:center;margin-top:20px;font-family:'Poppins', sans-serif;font-size:40px;font-weight:600">Checkout item details:</h1><br>
+    <div style="text-align: center;font-family:'Poppins', sans-serif;font-weight:300;font-size:25px;">
+        {{ item.lapname }}<br>
+        {{ item.lapcolor }}<br>
+        {{ item.lapram }} RAM<br>
+        {{ item.lapprocessor }} Processor<br>
+        {{ item.lapstorage }} Storage<br>
+        ${{ item.lapamount }}<br>
+    </div>
+    <h2 style="margin-top:100px;text-align:center;font-family:'Poppins', sans-serif;font-size:40px">Choose your method of payment:</h2>
+    <div class="paymentmethod">   
+        <div class="paymentmethodbox">
+            <a href="{{ url_for('creditcardlaptops_page') }}">Credit Card Payment</a>
+        </div>
+         <br>
+        <div class="paymentmethodbox">     
+            <a href="{{ url_for('contractaccountlaptop_page') }}">Contract account Payment</a>   
+        </div>
+    </div>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

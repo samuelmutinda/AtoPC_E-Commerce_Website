@@ -1,0 +1,56 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Credit Card Payment</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <h1 style="text-align:center;margin-top:20px;font-family:'Poppins', sans-serif;font-size:40px;font-weight:600">Checkout item details:</h1><br>
+    <div style="text-align: center;font-family:'Poppins', sans-serif;font-weight:300;font-size:25px;">
+        {{ item.audioname }}<br>
+        {{ item.audiocolor }}<br>
+        ${{ item.audioamount }}<br>
+    </div>
+    <section>
+        <div class="Registercont">
+            <div class="Registerbox">
+                <h2>Purchase</h2>
+                <br>
+                <form method="POST">
+                    {{ form.hidden_tag() }}
+                     <div class="inputbox">
+                        <span>Enter Credit Card Service i.e VISA,MasterCard,PayPal</span>
+                        {{ form.creditcardservice(class="form-control") }}
+                    </div>
+                    <div class="inputbox">
+                        <span>Credit Card Number</span>
+                        {{ form.creditcardnumber(class="form-control") }}
+                    </div>
+                    <div class="inputbox">
+                        <span>Credit Card Code</span>
+                        {{ form.creditcardcode(class="form-control") }}
+                    </div>
+                    <div class="inputbox">
+                        {{form.submit(class="btn btn-lg btn-block btn-primary")}}
+                    </div>
+                    <br>
+                    <div class="inputbox">
+                        <p>Don't have a registered credit card? <a href="{{ url_for('creditcardaudio_page') }}">Proceed to Register card for Payment</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

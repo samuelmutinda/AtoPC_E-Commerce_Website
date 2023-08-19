@@ -1,0 +1,59 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Samsung S21 Ultra</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="shopiphone">
+        <p>Shop Samsung S21 Ultra</p>
+    </div>
+    <h1 style=" font-family:'Poppins', sans-serif; text-align:center;margin-top: 40px;margin-bottom: 20px;">Comes in 2 colors</h1>
+    <div class="slider">
+        <input type="radio" name="slider" title="Phantomblack" checked="checked" class="slider__nav"/>
+        <input type="radio" name="slider" title="Phantomsilver" class="slider__nav"/>
+        <div class="slider__inner">
+            <div class="slider__contents">
+                <h3>PHANTOM BLACK</h3>
+                <img class="slider__img2" src="../static/css/images/s21ultraphantomblack.png" alt="blacksamsung" style="width:476.95px;">
+            </div>
+            <div class="slider__contents">
+                <h3>PHANTOM SILVER</h3>
+                <img class="slider__img2" src="../static/css/images/s21ultraphantomsilver.png" alt="silversamsung" style="width:476.95px;">
+            </div>
+        </div>
+    </div>
+    <p style="text-align:center;font-size: 20px;font-family:'Poppins', sans-serif;font-weight: 300"> 6.8-inch display</p>
+    <form method="POST" class="phonedescript">
+        <h3>Choose your finish:</h3>
+        <input type="radio" id="colorbutt1" name="s21ultracolor" value="Phantomblack">
+        <label for="Phantomblack">Phantom Black</label>
+        <input type="radio" id="colorbutt2" name="s21ultracolor" value="Phantomsilver">
+        <label for="Phantomsilver">Phantom Silver</label>
+        <br>
+        <h3>Choose your capacity:</h3>
+        <div class="appleboxes">
+            <input type="radio" id="choicebutt1" name="s21ultrastorage" value="128gb">
+            <label for="choicebutt1">128<span id="secondtxt">GB<sup>2</sup><br></span><span id="thirdtxt">From $1199 tax inclusive*</span></label>
+
+            <input type="radio" id="choicebutt2" name="s21ultrastorage"value="256gb">
+            <label for="choicebutt2">256<span id="secondtxt">GB<sup>2</sup><br></span><span id="thirdtxt">From $1299 tax inclusive*</span></label>
+            
+            <input type="radio" id="choicebutt3" name="s21ultrastorage"value="512gb">
+            <label for="choicebutt3">512<span id="secondtxt">GB<sup>2</sup><br></span><span id="thirdtxt">From $1399 tax inclusive*</span></label>
+        </div>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

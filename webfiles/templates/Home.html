@@ -1,0 +1,111 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Homepage</title>
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="video">
+        <iframe src="https://player.vimeo.com/video/179414118?background=1">
+        </iframe>
+    </div>
+    <div class="galaxycont">
+        <h1>Meet Galaxy S21</h1>
+        <p><a href="{{ url_for('samsungs21_page') }}" class="underline" title ="Buy Samsung S21">BUY NOW</a></p>
+    </div>
+    <div class="galaxyimg">
+        <img src="../static/css/images/s21image.jpg" alt="samsung s21">
+    </div>
+    <div class="galaxyimg2">
+        <img src="../static/css/images/galaxys21box.jpg" alt="samsungs21box">
+    </div>
+    <div class="samsungdescript">
+        <h1>Made for the epic in<br>everyday</h1>
+            <div class="samsungdescriptp">
+                <p>Meet Galaxy S21 5G.Designed to revolutionize video and photography<br>
+                ,with beyond cinematic 8K resolution so you can snap epic photos<br>
+                right out of video. It has it all in two sizes: 64MP, Samsung's fastest chipset and a massive<br>
+                    all-day battery.Things just got epic.</p>
+            </div>
+        <h1>Never miss that perfect shot again.</h1>
+    </div>
+    <div class="samsungcont">
+        <img src="../static/css/images/samsungphoto1.jpeg" alt="Chair">
+        <img src="../static/css/images/samsunggirl.jpeg" alt="Girl">
+        <img src="../static/css/images/samsungphoto2.jpeg" alt="Vase">
+    </div>
+    <div class="hotaudio">
+        <h1>#WhatsHotOnAudio</h1>
+    </div>
+    <div class="beats">
+        <img src="../static/css/images/beatsbydrelogo2.png" alt="beatslogo" class="beatslogo">
+        <h1 class="beatsheader">POWERBEATS PRO</h1>
+    </div>
+    <div class="audiobox">
+        <div class="audiocont">
+            <div class="audio">
+                <h2>Totally Wireless<br>earphones built<br>for performance</h2>
+                    <ul>
+                        <li>Sweat & water resistant</li>
+                        <li>Volume & track controls on each earbud</li>
+                        <li>Adjustable,secure-fit earhooks</li>
+                        <li>Up to 9 hours of listening time</li>
+                    </ul>
+                    <p><a href="{{ url_for('PowerBeatsPro_page') }}" class="underline2" title ="Buy PowerBeatsPro">BUY NOW</a></p>
+            </div>
+            <div class="smallbox">
+                <img class="bottom" src="../static/css/images/powerbeatsblack.png" alt="black earphones" style="width:460px;">
+                <img class="top" src="../static/css/images/powerbeatswhite.png" alt="white earphones" style="width:460px;">
+            </div>
+        </div>
+    </div>
+    <div class="hotlaptop">
+        <h1>#WhatsHotOnLaptops</h1>
+    </div>   
+    <div class="MacB">
+        <h2>Macbook Pro</h2>
+        <h1>All systems Pro</h1>
+        <p>The Apple M1 chip gives the 13‑inch MacBook Pro<br>speed and power beyond belief. With up to 2.8x CPU<br>
+            performance. Up to 5x the graphics speed. Mac's most<br>advanced Neural Engine for up to 11x faster machine<br>
+            learning. And up to 20 hours of battery life — the longest<br>of any Mac ever. It’s Apple's most popular pro notebook,<br>
+            taken to a whole new level.</p>
+        <p><a href="{{ url_for('MacbookPro13inch_page') }}" class="underline2" title ="Buy MacbookPro13inch">BUY NOW</a></p>
+    </div>
+    <div class="Macimg">
+        <img src="../static/css/images/macbookpro3.jpg" alt="Macbook">
+    </div>
+    <h1>Get the new iPhone 12</h1>
+    <div class="p1">
+        <p>From A$1,199 before trade-in*</p>
+    </div>
+    <div class="p2">
+        <p>5G speed</p>
+        <p>A14 Bionic,the fastest chip in a smartphone</p><p>Advanced dual-camerasystem</p> <p>An edge to edge OLED display</p>
+        <p>Ceramic Shield with four times better drop performance,tougher than any smartphone glass</p><p>Night mode on every camera</p>
+        <p><a href="{{ url_for('iphone12_page') }}" class="underline" title ="Buy iPhone12">BUY NOW</a></p>
+        </div>
+        <div class="bodyimg">
+                <img src="../static/css/images/apple_iphone-12_new-design_geo_10132020_big.jpg.large.jpg" alt="iphone colors">
+        </div>
+            <div class="container1">
+                <div class="box">
+                    <img class="bottom" src="../static/css/images/apple_iphone-12_color-blue_10132020_big_carousel.jpg.large.jpg" alt="blue iphone">
+                    <img class="top" src="../static/css/images/apple_iphone-12_color-black_10132020_big_carousel.jpg.large.jpg" alt="black iphone">
+                </div>
+                <div class="box2">
+                    <img class="bottom" src="../static/css/images/apple_iphone-12_color-red_10132020_big_carousel.jpg.large.jpg" alt="red iphone">
+                    <img class="top" src="../static/css/images/apple_iphone-12_color-white_10132020_big_carousel.jpg.large.jpg" alt="whiteiphone">
+                </div>
+            </div>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}      

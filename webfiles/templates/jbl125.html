@@ -1,0 +1,61 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>JBL TUNE 125TWS</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="shopiphone">
+        <p>Shop JBL Tune 125TWS</p>
+    </div>
+    <h1 style=" font-family:'Poppins', sans-serif; text-align:center;margin-top: 40px;margin-bottom: 20px;">Comes in 3 colors</h1>
+   <br>
+   <br>
+   <br>
+   <div style="box-sizing: border-box;">
+        <div class="row5">
+            <div class="column5">
+                <img src="../static/css/images/jbltune250black.png" alt="j125black" style="max-width:100%;height:auto;">
+                <p style="margin-top:0px;font-family:'Poppins',sans-serif;font-weight:600;font-size:23px;">BLACK</p>
+            </div>
+            <div class="column5">
+                <img src="../static/css/images/jbltune250blue.png" alt="j125blue" style="max-width:100%;height:auto;">
+                <p style="margin-top:0px;font-family:'Poppins',sans-serif;font-weight:600;font-size:23px;">BLUE</p>
+            </div>
+            <div class="column5">
+                <img src="../static/css/images/jbltune250pink.png" alt="j125pink" style="max-width:100%;height:auto;">
+                <p style="margin-top:0px;font-family:'Poppins',sans-serif;font-weight:600;font-size:23px;">PINK</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h3 style="text-align:center;font-family:'Poppins', sans-serif;font-size:45px;">TRUE WIRELESS EARBUDS</h3>
+    <p style="text-align:center;font-size:20px;font-family:'Poppins', sans-serif;font-weight:300">Up to 32 hours of battery life<br>Maximum play time : 8 hours<br>Charging time(from empty) : 2 hours<br>
+    As soon as you take the earbuds of the case, they are paired to your Android device in a single tap<br>After pairing, any other device can be detected even when not paired<br>
+    Dual Connect gives you the choice to seamlessly enjoy music or make calls with either one or both buds<br></p>
+    <br>
+    <form method="POST" class="phonedescript2">
+        <h3>Choose your finish:</h3>
+        <input type="radio" id="colorspeak1" name="j125color" value="Black">
+        <label for="Black">Black</label>
+        <input type="radio" id="colorspeak2" name="j125color" value="Blue">
+        <label for="Blue">Blue</label>
+        <input type="radio" id="colorspeak3" name="j125color" value="Pink">
+        <label for="Pink">Pink</label>
+        <h3>From $99 tax inclusive*</h3>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

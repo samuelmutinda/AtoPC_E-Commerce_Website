@@ -1,0 +1,43 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Samsung21</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="options">
+        <p>Choose your preferred model:</p>
+    </div>
+    <div class="frame2">
+        <h2>Galaxy S21</h2>
+        <a href="{{ url_for('samsungs21_page') }}"><img src="../static/css/images/s21phantomviolet2.png" alt="S21violet" style="width:400.3px;padding-left:50px;margin-top:-25px;"></a>
+        <p style="text-align:center;margin-top:-20px;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $799 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>Samsung S21+5G</h2>
+        <a href="{{ url_for('samsungs215G_page') }}"><img src="../static/css/images/s21plus5gphantomblack.png" alt="s21black" style="width:400.3px;padding-left:50px;margin-top:-25px;"></a>
+        <p style="text-align:center;margin-top:-20px;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $999 tax inclusive*</p>
+    </div>
+    <br>
+    <div class="frame2">
+        <h2>Samsung S21 Ultra</h2>
+        <a href="{{ url_for('samsungs21ultra_page') }}"><img src="../static/css/images/s21ultraphantomblack.png" alt="s21ultrablack" style="width:400.3px;padding-left:50px;margin-top:-25px;"></a>
+        <p style="text-align:center;margin-top:-20px;font-size: 23px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $1199 tax inclusive*</p>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

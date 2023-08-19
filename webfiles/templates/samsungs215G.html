@@ -1,0 +1,70 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Samsung S21+5G</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="shopiphone">
+        <p>Shop Samsung S21+5G</p>
+    </div>
+    <h1 style=" font-family:'Poppins', sans-serif; text-align:center;margin-top: 40px;margin-bottom: 20px;">Comes in 4 colors</h1>
+    <div class="slider">
+        <input type="radio" name="slider" title="Phantomviolet" checked="checked" class="slider__nav"/>
+        <input type="radio" name="slider" title="Phantompink" class="slider__nav"/>
+        <input type="radio" name="slider" title="Phantomsilver" class="slider__nav"/>
+        <input type="radio" name="slider" title="Phantomblack" class="slider__nav"/>
+        <div class="slider__inner">
+            <div class="slider__contents">
+                <h3>PHANTOM VIOLET</h3>
+                <img class="slider__img2" src="../static/css/images/s21phantomviolet2.png" alt="violetsamsung" style="width:476.95px;">
+            </div>
+            <div class="slider__contents">
+                <h3>PHANTOM PINK</h3>
+                <img class="slider__img2" src="../static/css/images/s21phantompink.png" alt="pinksamsung" style="width:476.95px;">
+            </div>
+            <div class="slider__contents">
+                <h3>PHANTOM SILVER</h3>
+                <img class="slider__img2" src="../static/css/images/samsung-galaxy-s21-plus-5g-phantom-silver.png" alt="silversamsung" style="width:476.95px;">
+            </div>
+            <div class="slider__contents">
+                <h3>PHANTOM BLACK</h3>
+                <img class="slider__img2" src="../static/css/images/s21plus5gphantomblack.png" alt="blacksamsung" style="width:476.95px;">
+            </div>
+        </div>
+    </div>
+    <p style="text-align:center;font-size: 20px;font-family:'Poppins', sans-serif;font-weight: 300"> 6.7-inch display</p>
+    <form method="POST" class="phonedescript">
+        <h3>Choose your finish:</h3>
+        <input type="radio" id="colorbutt1" name="s215Gcolor" value="Phantomviolet">
+        <label for="Phantomviolet">Phantom Violet</label>
+        <input type="radio" id="colorbutt2" name="s215Gcolor" value="Phantompink">
+        <label for="Phantompink">Phantom Pink</label>
+        <input type="radio" id="colorbutt3" name="s215Gcolor" value="Phantomsilver">
+        <label for="Phantomsilver">Phantom Silver</label>
+        <input type="radio" id="colorbutt4" name="s215Gcolor" value="Phantomblack">
+        <label for="Phantomblack">Phantom Black</label>
+        <br>
+        <h3>Choose your capacity:</h3>
+        <div class="appleboxes">
+            <input type="radio" id="choicebutt1" name="s215Gstorage" value="128gb">
+            <label for="choicebutt1">128<span id="secondtxt">GB<sup>2</sup><br></span><span id="thirdtxt">From $999 tax inclusive*</span></label>
+
+            <input type="radio" id="choicebutt2" name="s215Gstorage"value="256gb">
+            <label for="choicebutt2">256<span id="secondtxt">GB<sup>2</sup><br></span><span id="thirdtxt">From $1099 tax inclusive*</span></label>
+        </div>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

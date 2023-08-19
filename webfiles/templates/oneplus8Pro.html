@@ -1,0 +1,63 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>OnePlus 8 Pro</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="shopiphone">
+        <p>Shop OnePlus 8 Pro</p>
+    </div>
+    <h1 style=" font-family:'Poppins', sans-serif; text-align:center;margin-top: 40px;margin-bottom: 20px;">Comes in 3 colors</h1>
+    <div class="slider">
+        <input type="radio" name="slider" title="Onyxblack" checked="checked" class="slider__nav"/>
+        <input type="radio" name="slider" title="Ultramarineblue" class="slider__nav"/>
+        <input type="radio" name="slider" title="Glacialgreen" class="slider__nav"/>
+        <div class="slider__inner">
+            <div class="slider__contents">
+                <h3>ONYX BLACK</h3>
+                <img class="slider__img2" src="../static/css/images/oneplus8Pro-black.png" alt="blackplus" style="width:485.95px;">
+            </div>
+            <div class="slider__contents">
+                <h3>ULTRAMARINE BLUE</h3>
+                <img class="slider__img2" src="../static/css/images/oneplus8Pro-blue.png" alt="blueplus" style="width:485.95px;">
+            </div>
+            <div class="slider__contents">
+                <h3>GLACIAL GREEN</h3>
+                <img class="slider__img2" src="../static/css/images/oneplus8Pro-green.png" alt="greenplus" style="width:485.95px;">
+            </div>
+        </div>
+    </div>
+    <p style="text-align:center;font-size: 20px;font-family:'Poppins', sans-serif;font-weight: 300"> 120Hz Fluid Display</p>
+    <form method="POST" class="phonedescript">
+        <h3>Choose your finish:</h3>
+        <input type="radio" id="colorbutt1" name="one8procolor" value="Onyxblack">
+        <label for="Onyxblack">Onyx black</label>
+        <input type="radio" id="colorbutt2" name="one8procolor" value="Ultramarineblue">
+        <label for="Ultramarineblue">Ultramarine blue</label>
+        <input type="radio" id="colorbutt3" name="one8procolor" value="Glacialgreen">
+        <label for="Glacialgreen">Glacial green</label>
+        <br>
+        <h3>Choose your capacity:</h3>
+        <div class="appleboxes">
+            <input type="radio" id="choicebutt1" name="one8prostorage"value="128gb">
+            <label for="choicebutt1">128<span id="secondtxt">GB<sup>2</sup><br></span><span id="thirdtxt">From $899 tax inclusive*</span></label>
+
+            <input type="radio" id="choicebutt2" name="one8prostorage"value="256gb">
+            <label for="choicebutt2">256<span id="secondtxt">GB<sup>2</sup><br></span><span id="thirdtxt">From $999 tax inclusive*</span></label>
+        </div>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

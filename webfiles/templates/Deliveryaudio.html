@@ -1,0 +1,66 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Delivery Page</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="options">
+        <p>Choose your preferred means of delivery:</p>
+    </div>
+    <form method = "POST" style="height:1600px">
+        {{ form.hidden_tag() }}
+        <div class="brand">
+            <label>
+                <div class = frame3>
+                    <input type="radio" id="delcompany1" name="delcompany" value="DHL">
+                    <img src="../static/css/images/dhl-logo-.png" alt="dhlcompany" style="width:330.3px;padding:30px 20px;margin-top:80px;margin-left:60px">
+                </div>
+            </label>
+            <label>
+                <div class = frame3>
+                    <input type="radio" id="delcompany2" name="delcompany" value="FedEx">
+                    <img src="../static/css/images/fedex-logo.png" alt="fedexcompany" style="width:330.3px;padding:20px 20px;margin-top:60px;margin-left:80px;">
+                </div>
+            </label>
+            <label>
+                <div class = frame3>
+                    <input type="radio" id="delcompany3" name="delcompany" value="UPS Inc">
+                    <img src="../static/css/images/ups-logo.png" alt="upscompany" style="width:220.3px;padding:20px 20px;margin-top:20px;margin-left:120px" >
+                </div>
+            </label> 
+        </div>
+        <br>
+        <br>
+        <section>
+            <div class="deliverybox">
+                <div class="deliverybox2">
+                    <h2>Enter your address:</h2>
+                    <br>
+                    <div class="inputbox">
+                        <span>Address</span>
+                        {{form.useraddress(class="form-control")}}
+                    </div>
+                    <br>
+                    <div class="inputbox">
+                        {{form.submit(class="btn btn-lg btn-block btn-primary")}}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+    </form>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

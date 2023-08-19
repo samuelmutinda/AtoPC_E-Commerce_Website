@@ -1,0 +1,52 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+
+<title>Login</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="hevlogo">
+        <p>HEV<span>ADA</span> ELECTRONICS</p>
+    </div>
+    <section>
+        <div class="Registercont">
+            <div class="Registerbox">
+                <h2>Login</h2>
+                <br>
+                <form method="POST">
+                    <!-- protect from hacker attack -->
+                    {{ form.hidden_tag() }}
+                    <div class="inputbox">
+                        <span>Username</span>
+                        {{form.username(class="form-control")}}
+                    </div>
+                    <div class="inputbox">
+                        <span>Password</span>
+                        {{form.password(class="form-control")}}
+                    <div>
+                        <br>
+                        <br>
+                    <div class="inputbox">
+                        {{form.submit(class="btn btn-lg btn-block btn-primary")}}
+                    </div>
+                        <br>
+                    <div class="inputbox">
+                        <p>Don't have an account? <a href="{{ url_for('register_page') }}">Sign up</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+{% endblock %}
+{% block footer %}
+
+{% endblock %}

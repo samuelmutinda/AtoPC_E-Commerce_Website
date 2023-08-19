@@ -1,0 +1,84 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Power Beats Pro</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="shopiphone">
+        <img src="../static/css/images/beatsbydrelogo2.png" alt="beatslogo" style="width:65px;"> 
+        <p>Shop Power Beats Pro</p>
+    </div>
+    <h1 style=" font-family:'Poppins', sans-serif; text-align:center;margin-top: 40px;margin-bottom: 20px;">Comes in 6 colors</h1>
+   <br>
+   <br>
+   <br>
+   <div style="box-sizing: border-box;">
+        <div class="row5">
+            <div class="column5">
+                <img src="../static/css/images/powerbeatsblack.png" alt="powerblack" style="max-width:384px;width:100%;height:auto;">
+                <p style="margin-top:0px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;">BLACK</p>
+            </div>
+            <div class="column5">
+                <img src="../static/css/images/powerbeatsnavy.png" alt="powernavy" style="max-width:384px;width:100%;height:auto;">
+                <p style="margin-top:0px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;">NAVY</p>
+            </div>
+            <div class="column5">
+                <img src="../static/css/images/powerbeatswhite.png" alt="powerivory" style="max-width:384px;width:100%;height:auto;">
+                <p style="margin-top:0px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;">IVORY</p>
+            </div>
+        </div>
+    </div>
+    <div style="box-sizing: border-box;">
+        <div class="row5">
+            <div class="column5">
+                <img src="../static/css/images/powerbeatsred.png" alt="powerred" style="max-width:100%;height:auto;">
+                <p style="margin-top:0px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;">LAVA RED</p>
+            </div>
+            <div class="column5">
+                <img src="../static/css/images/powerbeatspink.png" alt="powerpink" style="max-width:100%;height:auto;">
+                <p style="margin-top:0px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;">CLOUD PINK</p>
+            </div>
+            <div class="column5">
+                <img src="../static/css/images/powerbeatsbabyblue.png" alt="powerblue" style="max-width:100%;height:auto;">
+                <p style="margin-top:0px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;">GLACIER BLUE</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h3 style="text-align:center;font-family:'Poppins', sans-serif;font-size:45px;">TOTALLY WIRELESS EARPHONES</h3>
+    <p style="text-align:center;font-size:20px;font-family:'Poppins', sans-serif;font-weight:300">Up to 9 hours listening time<br>
+        Sweat & Water resistant<br>Adjustable,secure-fit earhooks<br>Volume & track controls on each earbud </p>
+    <br>
+    <form method="POST" class="phonedescript2">
+        <h3>Choose your finish:</h3>
+        <input type="radio" id="colorspeak1" name="powerprocolor" value="Black">
+        <label for="Black">Black</label>
+        <input type="radio" id="colorspeak2" name="powerprocolor" value="Navy">
+        <label for="Navy">Navy</label>
+        <input type="radio" id="colorspeak3" name="powerprocolor" value="Ivory">
+        <label for="Ivory">Ivory</label>
+        <input type="radio" id="colorspeak4" name="powerprocolor" value="Lavared">
+        <label for="Lavared">Lava Red</label>
+        <input type="radio" id="colorspeak5" name="powerprocolor" value="Cloudpink">
+        <label for="Cloudpink">Cloud Pink</label>
+        <input type="radio" id="colorspeak6" name="powerprocolor" value="Glacierblue">
+        <label for="Glacierblue">Glacier Blue</label>
+        <h3>From $249 tax inclusive*</h3>
+        <input type="submit" value="SUBMIT">
+    </form>
+    <p style="text-align: center;margin-top:0px;margin-bottom:30px;font-size:23px;font-family:'Poppins', sans-serif;font-weight:300;">Interested in other models?<a href="{{ url_for('BeatsbyDre_page') }}" style="text-decoration:none;margin-left:10px;">Check out Beats by Dre models</a></p>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

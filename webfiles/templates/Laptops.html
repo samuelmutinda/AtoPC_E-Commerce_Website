@@ -1,0 +1,41 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Laptops</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="options">
+        <p>Shop by brand:</p>
+    </div>
+    <br>
+    <div class="brand">
+        <div class="frame">
+            <a href="{{ url_for('Microsoft_page') }}"><img src="../static/css/images/microsoft_PNGlogo.png" alt="Microsoftlogo" style="width:350.3px;padding-left:60px;padding-top:40px;"></a>
+        </div>
+        <br>
+        <div class="frame">
+            <a href="{{ url_for('HP_page') }}"><img src="../static/css/images/hplogo.png" alt="hplogo" style="width:130.3px;padding-left:180px;padding-top:20px"></a>
+        </div>
+        <br>
+        <div class="frame">
+            <a href="{{ url_for('Mac_page') }}"><img src="../static/css/images/apple_logo_PNG19682.png" alt="applelogo" style="width:130.3px;padding-left:180px;padding-top:40px"></a>
+        </div>
+    </div>
+</body>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

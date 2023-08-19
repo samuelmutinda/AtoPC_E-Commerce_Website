@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin</title>
+        <link rel="stylesheet" href="../static/css/stylesheet.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        {% block head %}{% endblock %}
+    </head>
+    <header class="container">
+        <div class="navbar">
+            <img src="../static/css/images/icons8-cat-head-32.png" class="logo">
+            <nav>
+                <ul>
+                    <li style="margin-top: -7px;"><a href="{{ url_for('adminpage') }}">DASHBOARD</a></li>
+                    <li style="margin-top: -7px;"><a href="{{ url_for('managesmartphones') }}">MANAGE SMARTPHONES</a></li>
+                    <li style="margin-top: -7px;"><a href="{{ url_for('managelaptops') }}">MANAGE LAPTOPS</a></li>
+                    <li style="margin-top: -7px;"><a href="{{ url_for('manageaudio') }}">MANAGE AUDIO</a></li>
+                        <div class="rightnav">
+                            <div class="accountdet">
+                                <li style="margin-top:-7px;"><a href="{{ url_for('adminlogout_page') }}">LOG OUT</a></li>
+                            </div>
+                        </div>
+                </ul>
+            </nav>
+        </div>
+        {% block header %}{% endblock %}
+    </header>
+    <body> 
+        {% with messages = get_flashed_messages(with_categories=true)%}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{category}}">
+                        <p class="errmsg">{{ message}}</p>
+                    </div>
+                {% endfor %}
+            {% endif%}
+        {% endwith %}
+    {% block body %}{% endblock %}
+    </body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer >
+        <div class="last">
+                    <div class="contslast">
+                        <div class="footerleft">
+                            <h3>Find us</h3>
+                                <div class="menu">
+                                    <div class="ddleft">
+                                        <ul>
+                                            <li><i class="material-icons">location_on</i></li>
+                                            <li><i class="material-icons">local_phone</i></li>
+                                            <li><i class="material-icons">email</i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ddright">
+                                        <ul>
+                                            <li>Westlands Nairobi,Kenya</li>
+                                            <li>+12345678</li>
+                                            <li>HevadaElectronics@gmail.com</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="footerright">
+                            <h3>About</h3>
+                            <p>Hevada Electronics is a electronics distribution company<br>
+                            based in Nairobi,Kenya with 16 stores spread country-wide<br>
+                            and an online store of global reach.It is a credible and stable<br>
+                            supplier of genuine branded appliances from partnered brands<br>
+                            such as Samsung,Apple and Microsoft.Our wide range of<br> 
+                            products include Laptops,Smartphones,audio<br>
+                            gadgets among others.All these and more available at<br>
+                            competitive prices in our retail shops and online store.</p>
+                        </div>
+                    </div>
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                    <p class="copyright"> Copyright © 2021 Hevada Electronics Inc. All Rights Reserved.</p>    
+        </div> 
+        {% block footer %}{% endblock %}
+    </footer>
+</html>

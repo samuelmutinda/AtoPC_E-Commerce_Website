@@ -1,0 +1,89 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>iPhone 12</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="shopiphone">
+        <p><i class="fa fa-apple"></i></p>
+        <p>Shop iPhone 12</p>
+    </div>
+    <h1 style=" font-family:'Poppins', sans-serif; text-align:center;margin-top: 40px;margin-bottom: 20px;">Comes in 6 colors</h1>
+    <div class="slider">
+        <input type="radio" name="slider" title="Black" checked="checked" class="slider__nav"/>
+        <input type="radio" name="slider" title="Blue" class="slider__nav"/>
+        <input type="radio" name="slider" title="Green" class="slider__nav"/>
+        <input type="radio" name="slider" title="White" class="slider__nav"/>
+        <input type="radio" name="slider" title="Red" class="slider__nav"/>
+        <input type="radio" name="slider" title="Purple" class="slider__nav"/>
+        <div class="slider__inner">
+          <div class="slider__contents">
+            <h3>BLACK</h3>
+            <img class="slider__img" src="../static/css/images/iphone-12-black-select-2020.png" alt="blackiphone">
+          </div>
+          <div class="slider__contents">
+            <h3>BLUE</h3>
+            <img class="slider__img" src="../static/css/images/iphone-12-blue-select-2020.png" alt="blueiphone">
+          </div>
+          <div class="slider__contents">
+            <h3>GREEN</h3>
+            <img class="slider__img" src="../static/css/images/iphone-12-green-select-2020.png" alt="greeniphone">
+          </div>
+          <div class="slider__contents">
+            <h3>WHITE</h3>
+            <img class="slider__img" src="../static/css/images/iphone-12-white-select-2020.png" alt="whiteiphone">
+          </div>
+          <div class="slider__contents">
+            <h3>RED</h3>
+            <img class="slider__img" src="../static/css/images/iphone-12-red-select-2020.png" alt="rediphone">
+          </div>
+          <div class="slider__contents">
+            <h3>PURPLE</h3>
+            <img class="slider__img" src="../static/css/images/iphone-12-purple-select-2021.png" alt="purpleiphone">
+          </div>
+        </div>
+    </div>
+    <p style="text-align:center;font-size:20px;font-family:'Poppins',sans-serif;font-weight:300"> 6.1-inch display</p>
+    <form method="POST" class="phonedescript">
+      <h3>Choose your finish:</h3>
+      <input type="radio" id="colorbutton1" name="12color" value="Black">
+      <label for="Black">Black</label>
+      <input type="radio" id="colorbutton2" name="12color" value="Blue">
+      <label for="Blue">Blue</label>
+      <input type="radio" id="colorbutton3" name="12color" value="Green">
+      <label for="Green">Green</label>
+      <input type="radio" id="colorbutton4" name="12color" value="White">
+      <label for="White">White</label>
+      <input type="radio" id="colorbutton5" name="12color" value="Red">
+      <label for="Red">Red</label>
+      <input type="radio" id="colorbutton6" name="12color" value="Purple">
+      <label for="Purple">Purple</label>
+      <br>
+      <h3>Choose your capacity:</h3>
+      <div class="appleboxes">
+        <input type="radio" id="choicebutton1" name="12storage" value="64gb">
+        <label for="choicebutton1">64<span id="secondtxt">GB<sup>2</sup><br></span><span id="thirdtxt">From $799 tax inclusive*</span></label>
+
+        <input type="radio" id="choicebutton2" name="12storage"value="128gb">
+        <label for="choicebutton2">128<span id="secondtxt">GB<sup>2</sup><br></span><span id="thirdtxt">From $849 tax inclusive*</span></label>
+
+        <input type="radio" id="choicebutton3" name="12storage"value="256gb">
+        <label for="choicebutton3">256<span id="secondtxt">GB<sup>2</sup><br></span><span id="thirdtxt">From $949 tax inclusive*</span></label>
+      </div>
+      <input type="submit" value="SUBMIT">
+    </form>
+    <p style="text-align: center;margin-top:0px;margin-bottom:30px;font-size:23px;font-family:'Poppins', sans-serif;font-weight:300;">Interested in other models?<a href="{{ url_for('iPhone_page') }}" style="text-decoration:none;margin-left:10px;">Check out iPhone models</a></p>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

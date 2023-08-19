@@ -1,0 +1,45 @@
+{%extends 'adminbase.html'%}
+
+{% block head %}
+
+<title>Manage audio</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<div class="restock" style="text-align: center;font-family:'Poppins', sans-serif;" >
+    <h3>Select manufacturer to restock devices</h3>
+    <a href="{{ url_for('addairpods') }}" style="text-decoration:none; color:black;">1. Apple</a><br><br>
+    <a href="{{ url_for('addbeats') }}" style="text-decoration:none; color:black;">2. Beats</a><br><br>
+    <a href="{{ url_for('addbose') }}" style="text-decoration:none; color:black;">3. Bose</a><br><br>
+    <a href="{{ url_for('addjbl') }}" style="text-decoration:none; color:black;">3. JBL</a>
+</div>
+<br><br><br>
+<table class="table table-sm" style="justify-content: center;font-family:'Poppins', sans-serif;">
+    <h3 style="text-align: center;font-family:'Poppins', sans-serif;text-decoration:underline;">Audio Stock:</h3>
+    <thead>
+      <tr class="spaceUnder"></tr>
+        <th scope="col">Name</th>
+        <th scope="col">Color</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    {% for i in range(audio| length) %}
+    <tbody>
+      <tr class="spaceUnder">
+        <td>{{  audio[i].audioname }}</td>
+        <td>{{  audio[i].audiocolor }}</td>
+        <td>{{  audio[i].audioamount|int }}</td>
+      </tr>
+    </tbody>
+    {% endfor %}
+</table>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

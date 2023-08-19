@@ -1,0 +1,62 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Register Contract</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <h1 style="text-align:center;margin-top:20px;font-family:'Poppins', sans-serif;font-size:40px;font-weight:600">Checkout item details:</h1><br>
+    <div style="text-align: center;font-family:'Poppins', sans-serif;font-weight:300;font-size:25px;height:270px">
+        {{ item.lapname }}<br>
+        {{ item.lapcolor }}<br>
+        {{ item.lapram }} RAM<br>
+        {{ item.lapprocessor }} Processor<br>
+        {{ item.lapstorage }} Storage<br>
+        ${{ item.lapamount }}<br>
+    </div>
+    <section>
+        <div class="Registercont">
+            <div class="Registerbox">
+                <h2>Register contract to purchase:</h2>
+                <br>
+                <form method="POST">
+                    {{ form.hidden_tag() }} 
+                    <div class="inputbox">
+                        <span>Enter your names</span>
+                        {{ form.names(class="form-control") }}
+                    </div>
+                    <br>
+                    <div class="inputbox">
+                        <span>Contract Password</span>
+                        {{form.password1(class="form-control")}}
+                    <div>
+                    <br>
+                    <div class="inputbox">
+                        <span>Confirm Password</span>
+                        {{form.password2(class="form-control")}}
+                    </div>
+                    <br>
+                    <div class="inputbox">
+                        {{form.submit(class="btn btn-lg btn-block btn-primary")}}
+                    </div>
+                    <br>
+                    <div class="inputbox">
+                        <p>Already have a registered Contract? <a href="{{ url_for('registeredcontractlaptop_page') }}">Proceed to Payment</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

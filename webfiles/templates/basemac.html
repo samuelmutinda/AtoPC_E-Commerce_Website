@@ -1,0 +1,47 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Mac</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="options">
+        <p>Choose your preferred model:</p>
+    </div>
+    <div class="frame5">
+        <h2 style="font-size:37px">MacBook Air</h2>
+        <a href="{{ url_for('MacbookAir_page') }}"><img src="../static/css/images/macbookairgold256gb.png" alt="macairgold" style="width:530.3px;padding-left:85px;margin-top:-50px;"></a>
+        <p style="text-align: center;margin-top:-20px;font-size: 30px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $999 tax inclusive*</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="frame5">
+        <h2 style="font-size:37px">MacBook Pro 13"</h2>
+        <a href="{{ url_for('MacbookPro13inch_page') }}"><img src="../static/css/images/macbookpro13inchad.png" alt="macbook13" style="width:550.3px;height:330px;padding-left:85px;margin-top:60px"></a>
+        <p style="text-align: center;margin-top:45px;font-size: 30px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $1299 tax inclusive*</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="frame5">
+        <h2 style="font-size:37px">MacBook Pro 16"</h2>
+        <a href="{{ url_for('MacbookPro16inch_page') }}"><img src="../static/css/images/macbookpro16inchad.png" alt="macbook16" style="width:550.3px;height:340px;padding-left:85px;margin-top:60px"></a>
+        <p style="text-align: center;margin-top:45px;font-size: 30px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $2399 tax inclusive*</p>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

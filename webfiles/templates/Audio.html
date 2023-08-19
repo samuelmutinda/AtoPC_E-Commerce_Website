@@ -1,0 +1,45 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Audio</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="options">
+        <p>Shop by brand:</p>
+    </div>
+    <br>
+    <div class="brand">
+        <div class="frame">
+            <a href="{{ url_for('BeatsbyDre_page') }}"><img src="../static/css/images/beatsbydrelogo2.png" alt="Beatslogo" style="width:170.3px;padding-left:160px;padding-top:10px;"></a>
+        </div>
+        <br>
+         <div class="frame">
+            <a href="{{ url_for('AppleAudio_page') }}"><img src="../static/css/images/apple_logo_PNG19682.png" alt="applelogo" style="width:130.3px;padding-left:180px;padding-top:40px"></a>
+        </div>
+        <br>
+        <div class="frame">
+            <a href="{{ url_for('Bose_page') }}"><img src="../static/css/images/bose-logo.png" alt="boselogo" style="width:270.3px;padding-left:120px;padding-top:10px"></a>
+        </div>
+        <br>
+        <div class="frame">
+            <a href="{{ url_for('JBL_page') }}"><img src="../static/css/images/jbl-logo.png" alt="jbllogo" style="width:130.3px;padding-left:198px;padding-top:40px"></a>
+        </div>
+    </div>
+</body>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

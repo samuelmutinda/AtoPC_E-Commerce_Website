@@ -1,0 +1,62 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>JBL Live 500BT</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="shopiphone">
+        <p>Shop JBL Live 500BT</p>
+    </div>
+    <h1 style=" font-family:'Poppins', sans-serif; text-align:center;margin-top: 40px;margin-bottom: 20px;">Comes in 3 colors</h1>
+   <br>
+   <br>
+   <br>
+   <div style="box-sizing: border-box;">
+        <div class="row5">
+            <div class="column5">
+                <img src="../static/css/images/jblive500black.png" alt="j500black" style="max-width:100%;height:auto;">
+                <p style="margin-top:0px;font-family:'Poppins',sans-serif;font-weight:600;font-size:23px;">BLACK</p>
+            </div>
+            <div class="column5">
+                <img src="../static/css/images/jblive500blue.png" alt="j500blue" style="max-width:100%;height:auto;">
+                <p style="margin-top:0px;font-family:'Poppins',sans-serif;font-weight:600;font-size:23px;">BLUE</p>
+            </div>
+            <div class="column5">
+                <img src="../static/css/images/jblive500white.png" alt="j500white" style="max-width:100%;height:auto;">
+                <p style="margin-top:0px;font-family:'Poppins',sans-serif;font-weight:600;font-size:23px;">WHITE</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h3 style="text-align:center;font-family:'Poppins', sans-serif;font-size:45px;">WIRELESS OVER-EAR HEADPHONES</h3>
+    <p style="text-align:center;font-size:20px;font-family:'Poppins', sans-serif;font-weight:300">Tap the ear cup to activate the Google voice assistant or Amazon Alexa-<br>
+        Use the all-new JBL App to easily set your preferred voice assistants<br>Touch of the Ambient Aware button increases the ambient sound and lets<br> you hear what’s happening around you -<br>
+        TalkThru mode drops the music level down, allowing you to talk to your<br>friends without removing your headphones<br>Up to 30 hours listening time-2Hours Recharging time<br>Quick 15 minute charge extends play time by 2 hours<br>
+        Plug in the audio cable to continue listening and chatting when battery is flat<br>Personalize listening experience by tweaking the JBL LIVE 500BT sound preference<br>via the free JBL Headphones App</p>
+    <br>
+    <form method="POST" class="phonedescript2">
+        <h3>Choose your finish:</h3>
+        <input type="radio" id="colorspeak1" name="j500color" value="Black">
+        <label for="Black">Black</label>
+        <input type="radio" id="colorspeak2" name="j500color" value="Blue">
+        <label for="Blue">Blue</label>
+        <input type="radio" id="colorspeak3" name="j500color" value="White">
+        <label for="White">White</label>
+        <h3>From $149 tax inclusive*</h3>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

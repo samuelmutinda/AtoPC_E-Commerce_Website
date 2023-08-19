@@ -1,0 +1,47 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Microsoft</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="options">
+        <p>Choose your preferred model:</p>
+    </div>
+    <div class="frame4">
+        <h2 style="font-size:37px">Surface Laptop Go</h2>
+        <a href="{{ url_for('SurfaceLaptopGo_page') }}"><img src="../static/css/images/Surfacelaptopgoad.png" alt="surfacelaptopgo" style="width:549px;height:600px;padding-left:85px;margin-top:-70px"></a>
+        <p style="text-align: center;margin-top:-160px;font-size: 30px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $549 tax inclusive*</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="frame4">
+        <h2 style="font-size:37px">Surface Pro 7</h2>
+        <a href="{{ url_for('SurfacePro7_page') }}"><img src="../static/css/images/SurfacePro7ad.png" alt="surfacepro7" style="width:530.3px;padding-left:85px;margin-top:-80px"></a>
+        <p style="text-align: center;margin-top:-130px;font-size: 30px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $749 tax inclusive*</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="frame4">
+        <h2 style="font-size:37px">Surface Laptop 4</h2>
+        <a href="{{ url_for('SurfaceLaptop4_page') }}"><img src="../static/css/images/surfacelaptop4ad.png" alt="surfacelaptop4" style="width:530.3px;height:570px;padding-left:85px;margin-top:-47px"></a>
+        <p style="text-align: center;margin-top:-140px;font-size: 30px;font-family:'Poppins', sans-serif;font-weight:300;">Starts at $999 tax inclusive*</p>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

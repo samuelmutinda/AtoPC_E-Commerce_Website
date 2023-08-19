@@ -1,0 +1,40 @@
+{%extends 'base.html'%}
+
+{% block head %}
+
+<title>Smartphones</title>
+
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+<body>
+    <div class="options">
+        <p>Shop by brand:</p>
+    </div>
+    <div class="brand">
+        <div class="frame">
+            <a href="{{ url_for('Samsung_page') }}"><img src="../static/css/images/samsung_logo_PNG8.png" alt="Samsunglogo" style="width:310.3px;padding-left: 100px;"></a>
+        </div>
+        <br>
+        <div class="frame">
+            <a href="{{ url_for('OnePlus_page') }}"><img src="../static/css/images/oneplus-logo.png" alt="onepluslogo" style="width:310.3px;margin-top:-70px;height:320px;padding-left:100px;"></a>
+        </div>
+        <br>
+        <div class="frame">
+            <a href="{{ url_for('iPhone_page') }}"><img src="../static/css/images/apple_logo_PNG19682.png" alt="applelogo" style="width:130.3px;padding-left:180px;padding-top:40px"></a>
+        </div>
+    </div>
+</body>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}
